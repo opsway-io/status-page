@@ -35,4 +35,4 @@ jobs:
           context: .
           push: true
           tags: |
-            naueramant/opsway-dashboard:${{ steps.prep.outputs.BUILD_ID }}
+            naueramant/opsway-status-page:${{ steps.prep.outputs.BUILD_ID }}
