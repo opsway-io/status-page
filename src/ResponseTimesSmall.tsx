@@ -10,7 +10,6 @@ const ResponseTimesSmall: FunctionComponent<ResponseTimesSmallProps> = () => {
             direction="row"
             sx={{
                 height: "2rem",
-                opacity: 0.75,
             }}
         >
             {new Array(48).fill(0).map((_, i) => (

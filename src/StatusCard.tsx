@@ -34,19 +34,19 @@ const StatusCard: FunctionComponent<StatusCardProps> = () => {
                                     textAlign: "right",
                                 }}
                             >
+                                99.98% uptime - 7 days
+                            </Typography>
+
+                            <Divider orientation="vertical" flexItem />
+
+                            <Typography variant="body1" color="text.secondary">
                                 127ms avg
                             </Typography>
 
                             <Divider orientation="vertical" flexItem />
 
                             <Typography variant="body1" color="text.secondary">
-                                99.98% uptime
-                            </Typography>
-
-                            <Divider orientation="vertical" flexItem />
-
-                            <Typography variant="body1" color="text.secondary">
-                                Last check 1m ago
+                                checked 1m ago
                             </Typography>
                         </Stack>
                     }
