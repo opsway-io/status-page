@@ -1,16 +1,18 @@
-import { Box, Card, Container, Link, Stack, Typography } from "@mui/material";
-import StatusCard from "./StatusCard";
+import { Box, Card, Container, Divider, Link, Stack, Typography } from "@mui/material";
+import StatusCard from "./components/StatusCard";
+import TableOverview from "./components/Table";
+import UltraSimpleOverview from "./components/UltraSimple";
 
 function App() {
     return (
         <Box
             sx={{
                 backgroundColor: "background.default",
-                height: "100%",
+                height: "fit-content",
                 width: "100%",
             }}
         >
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <header
                     style={{
                         paddingTop: "2rem",
@@ -38,12 +40,34 @@ function App() {
                                 padding: 1,
                             }}
                         >
-                            <Typography variant="body1">All checks are passing</Typography>
+                            <Typography fontSize={18}>All checks are passing</Typography>
                         </Card>
+
+                        <Divider />
+
+                        <Typography variant="body1" color="text.secondary">
+                            Overview style 1
+                        </Typography>
 
                         <StatusCard />
                         <StatusCard />
                         <StatusCard />
+
+                        <Divider />
+
+                        <Typography variant="body1" color="text.secondary">
+                            Overview style 2
+                        </Typography>
+
+                        <TableOverview />
+
+                        <Divider />
+
+                        <Typography variant="body1" color="text.secondary">
+                            Overview style 3
+                        </Typography>
+
+                        <UltraSimpleOverview />
 
                         <Link href="https://opsway.io" target="_blank" rel="noopener noreferrer">
                             <Typography

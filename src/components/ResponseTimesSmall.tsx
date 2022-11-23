@@ -6,7 +6,7 @@ interface ResponseTimesSmallProps {}
 const ResponseTimesSmall: FunctionComponent<ResponseTimesSmallProps> = () => {
     return (
         <Stack
-            spacing={1}
+            spacing={0.5}
             direction="row"
             sx={{
                 height: "2rem",
